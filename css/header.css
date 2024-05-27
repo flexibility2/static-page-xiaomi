@@ -67,3 +67,77 @@
   .header-menu:hover  .header-submenu{
     display: block;
   }
+
+  .header-search {
+    margin-top: 25px;
+    position: relative;
+  }
+
+  .header-search input {
+    width: 245px;
+    height: 50px;
+    font-size: 16px;
+    padding: 0 15px;
+    outline: none;
+    border: 1px solid #ccc;
+  }
+  .header-searchicon {
+    width: 55px;
+    height: 50px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-left: none;
+    cursor: pointer;
+    color: #777;
+  }
+
+  .header-searchicon .iconfont {
+    font-size: 20px;
+  }
+
+  .header-suggest {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 245px;
+    border: 1px solid #ff6700;
+    border-top: none;
+    z-index: 40;
+    background: #fff;
+    display: none;
+  }
+  .header-suggest a {
+    display: block;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+  }
+  .header-suggest a:hover {
+    background: #eee;
+    color: inherit;
+  }
+  .header-search input:hover {
+    border-color: #aaa;
+  }
+
+  .header-search input:hover ~ .header-searchicon {
+    border-color: #aaa;
+  }
+  .header-search input:focus ~ .header-suggest {
+    display: block;
+  }
+
+  .header-search input:focus {
+    border-color: #ff6700;
+  }
+
+  .header-search input:focus ~ .header-searchicon {
+    border-color: #ff6700;
+  }
+
+  .header-searchicon:hover {
+    background: #ff6700;
+    border-color: #ff6700;
+    color: #fff;
+  }
